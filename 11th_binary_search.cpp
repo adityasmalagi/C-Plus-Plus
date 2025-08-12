@@ -18,12 +18,13 @@ int binarySearch(vector<int> arr, int tar){    //iterative
             end = mid - 1;
         }else{
             return mid;
-        }
+        }    
     }
     return -1;
 }
 
-
+// recursion code
+;
 int recBinarySearch(vector<int> arr, int tar, int st , int end){
     if(st <= end){
         int mid = st + (end-st)/ 2;
