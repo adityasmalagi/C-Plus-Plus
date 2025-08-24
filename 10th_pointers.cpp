@@ -92,6 +92,9 @@ cout<<endl;
     cout << ptr7 << endl;
 
     cout << (ptr6 == ptr7) << endl;  // 1
+    cout << endl;
+    
     cout << "Hello world" << endl;
+    cout << "hi im aditya s malagi " << endl;
     return 0;
 } 

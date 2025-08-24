@@ -88,6 +88,10 @@ int prime(int v){
 
 }
 
+void myFunction(string fname){
+    cout << fname << " Refsnes\n";
+}
+
 int main(){
     //function call/invoke
     printHello();
@@ -120,5 +124,12 @@ int nq = 6, r = 3;
 cout << nCr(nq,r) << endl;
 
 cout << prime(6) << endl;
+
+cout << endl;
+
+myFunction("Liam");
+myFunction("Jenny");
+myFunction("Anja");
+
     return 0;
 }
