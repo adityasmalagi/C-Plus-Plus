@@ -76,6 +76,34 @@ void updateYear(Car2 &c)
   c.year++;
 }
 
+// question using function
+
+float toCelsius(float fahrenheit)
+{
+  return (5.0 / 9.0) * (fahrenheit - 32.0);
+}
+
+int sum(int k)
+{
+  if (k > 0)
+  {
+    return k + sum(k - 1);
+  }
+  else
+  {
+    return 0;
+  }
+}
+
+int countdown(int n)
+{
+  if (n > 0)
+  {
+    cout << n << " ";
+    countdown(n - 1);
+  }
+}
+
 int main()
 {
   myFunction("India");
@@ -125,5 +153,16 @@ int main()
   Car2 NewCar = {"BMW", 2025};
   updateYear(NewCar);
   cout << "The " << NewCar.brand << " is now form year " << NewCar.year << "\n";
+
+  float fahreneit = 98.8;
+  float result = toCelsius(fahreneit);
+  cout << "fahrenheit : " << fahreneit << "\n";
+  cout << "convert Fahrenheit to celsius :" << result << endl;
+
+  int result2 = sum(10);
+  cout << result2 << endl;
+
+  int value2 = countdown(5);
+  cout << value2 << endl;
   return 0;
 }
