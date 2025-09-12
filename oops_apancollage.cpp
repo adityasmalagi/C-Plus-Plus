@@ -125,4 +125,5 @@ cout << endl;
     s2.name = "neha";
     s2.getInfo();
     return 0; 
+    
 }
