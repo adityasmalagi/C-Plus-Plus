@@ -18,7 +18,25 @@ int printhello(){
 void myFunction(){
     cout << "I just got exeuted!";
 
-}
+};
+
+class Employee{
+    private:
+     int salary;
+
+    public:
+     Employee(int s){
+        salary = s;
+     }
+
+     //Delare friend function 
+    friend void displaySalary(Employee emp);
+};
+
+void displaySalary(Employee emp){
+    cout << "Salary : " << emp.salary;
+};
+
 
 int main(){
     cout << "hello world" << endl;
@@ -171,6 +189,11 @@ cout << *ptr << endl;
 
 myFunction();
 cout << 101/2 << endl;
-return 0;
 
+cout << endl;
+
+Employee myEmp(50000);
+displaySalary(myEmp);
+
+return 0;
 }
