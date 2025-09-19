@@ -24,7 +24,7 @@ int main(){
 
 cout << endl;
     ofstream MyFile("filename.txt");
-    MyFile << "Files can be tricky, but it is fun enough!";
+    MyFile << "Files can be tricky, but it is fun enough!\n";
     MyFile.close();
 
     string myText;
@@ -34,5 +34,19 @@ cout << endl;
         cout << myText;
     }
     MyReadFile.close();
+cout << endl;
+
+    char cha;
+    cout << "enter the letter : ";
+    cin >> cha;
+
+   if (cha >= 'a' && cha <= 'b'){
+        cout << "lowercase letter" << endl;
+   }else{
+    cout << "uppercase letter " << endl;
+   }
+
+   int n = 12;
+   cout << (n >= 0 ? "positive" : "negetive") << endl;
     return 0;
 }
