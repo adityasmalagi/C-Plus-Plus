@@ -20,6 +20,7 @@ int main() {
     }
     
     cout <<count << endl;
+    cout << "hello" << endl;
     return 0;
 }
 

@@ -48,5 +48,77 @@ cout << endl;
 
    int n = 12;
    cout << (n >= 0 ? "positive" : "negetive") << endl;
+
+   do{
+    cout << "hello world " << endl;
+   }while (3 > 5);
+
+
+   int v = 10;
+   int j = 1;
+   do{
+    cout << j << " ";
+    j++;
+   }while(j <= v);
+
+   int n2 = 4;
+   for(int i =0; i <= n2;i++){
+    for(int i = 1;i <= n2;i++ ){
+        cout << i;
+    }
+    cout << endl;
+   }
+
+   int n3 = 4;
+   for(int i = 0; i <=n3;i++){
+    char ch = 'A';
+    for(int i =0;i <=n3;i++){
+        cout << ch;
+        ch += 1;
+    }
+    cout << endl;
+
+   }
+cout << endl;
+
+   int n4 = 3;
+   int num = 1;
+   for(int i =0;i< n4;i++){
+    for(int i = 1;i <=n4;i++){
+        cout << num;
+        num++;
+    }
+    cout << endl;
+   }
+
+cout << endl;
+
+   int n5 = 3;
+   char ch = 'A';
+   for (int i = 0; i< n5;i++){
+    for(int i = 1 ; i<= n5;i++){
+        cout << ch;
+        ch++;
+    }
+    cout << endl;
+   }
+cout << endl;
+
+   int a2 = 4;
+   for(int i = 0; i<a2;i++){
+    for (int j = 0;j <i+1;j++){
+        cout << (i+1);
+    }
+    cout << endl;
+   }
+cout << endl;
+
+   int b = 6;
+   for (int i =0;i<b;i++){
+    for(int j= i-1;j>0;j--){
+        cout << j;
+    }
+    cout << endl;
+   }
     return 0;
 }
