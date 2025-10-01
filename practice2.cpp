@@ -120,5 +120,58 @@ cout << endl;
     }
     cout << endl;
    }
+cout << endl;
+   int c = 4;
+   int nu = 1;
+   for (int i =0;i< c;i++){
+    for(int j = 0;j<i+1;j++){
+        cout << nu;
+        nu++;
+    }
+    cout << endl;
+   }
+cout << endl;
+
+   int n6 = 4;
+   char ch2 = 'A';
+   for (int i =0;i< n6;i++){
+    for(int j = 0;j<i+1;j++){
+        cout << ch2;
+        ch2++;
+    }
+    cout << endl;
+   }
+cout << endl;
+
+int m = 4;
+for(int i = 0;i<m;i++){
+    for(int j =0;j<m-i-1;j++){
+        cout << " ";
+    }
+    cout << "*";
+
+    if(i != 0){
+        for (int j =0;j< 2*i-1;j++){
+            cout << " ";
+        }
+        cout << "*";
+    }
+    cout << endl;
+}
+
+for(int i =0;i<m-1;i++){
+    for(int j = 0;j<i+1;j++){
+        cout << " ";
+    }
+    cout << "*";
+
+    if(i != m-2){
+        for(int j =0;j<2*(m-i)-5;j++){
+            cout << " ";
+        }
+        cout << "*";
+    }
+    cout << endl;
+}
     return 0;
 }
